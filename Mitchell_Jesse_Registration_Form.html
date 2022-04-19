@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+    </head>
+    <body>
+        <H1>Registration Form</H1>
+        <br>
+            <form action="/process" method="post">
+                <div>
+                    <label>First Name: *</label>
+                    <input type="text" name="First_Name" placeholder="First Name...">
+                </div>
+                    <br>
+                <div>
+                    <label>Last Name: *</label>
+                    <input type="text" name="First_Name" placeholder="Last Name...">
+                </div>
+                    <br>
+                <div>
+                    <label>Email: *</label>
+                    <input type="text" name="email" placeholder="Your email...">
+                </div>
+                    <br>
+                <div>
+                    <label>Password: *</label>
+                    <input type="password" name="password"  placeholder="Password...">
+                </div>
+                    <br>
+                <div>
+                    <label>Confirm Password: *</label>
+                    <input type="password" name="confirm_password" placeholder="Confirm Password...">
+                </div>
+                    <br>
+                <div>
+                    <label>Birthday</label>
+                    <input type="date" name="dob" placeholder="mm/dd/yyyy">
+                </div>
+                    <br>
+                <div>
+                    <label>Gender Identity: </label>
+                        <br>
+                    <input type="radio" name="male" id="male"><label>Male </label>
+                    <input type="radio" name="female" id="female"><label>Female </label>
+                    <input type="radio" name="non_binary" id="non-binary"><label>Non-binary </label>
+                    <input type="radio" name="no_answer" id="no answer"><label>I prefer not to answer </label>
+                </div>
+                    <br>
+                <div>
+                    <p>A short description about myself:</p>
+                    <textarea name="description" id="description" cols="20" rows="3"></textarea>
+                </div>
+                    <br>
+                <div>
+                    <label>Favorite Language: </label>
+                    <select name="language" aria-placeholder="JavaScript">
+                        <option>JavaScript</option>
+                        <option>Python</option>
+                        <option>CSS</option>
+                    </select>
+                </div>
+                    <br>
+                <div>
+                    <input type="checkbox" name="accept" id="accept">
+                    <label for="accept">Yes, I would like to recieve periodic email updates</label>
+                </div>
+                    <br>    
+                <div>
+                    <input type="submit" value="Create Account" >
+                </div>
+                    <br>
+                <div>
+                    <p>* Indicates a required field</p>
+                </div>
+            </form>
+    </body>
+</html>
